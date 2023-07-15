@@ -31,6 +31,7 @@ bot.hears('hi', (ctx) => ctx.reply('Hey there'));
 //     await ctx.leaveChat();
 //   });
 // bot.on(message("text"), ctx => ctx.reply("i dont understand humans"));
+// bot.on(message(param.), ctx => ctx.reply("i dont understand humans"));
 bot.on('text', (ctx) => {
     console.log(ctx.update.message);
     if(ctx.update.message.text == 'I love you') {
@@ -51,6 +52,7 @@ bot.launch();
 }catch{
     console.log("unexpected command") 
 }
+
 
 
 
